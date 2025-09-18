@@ -4,33 +4,48 @@ body{
 }
 
 .main{
- display: flex;
- flex-direction: column;
- width: 100%;
-}
-.title{
-  font-size: 20px;
-}
-.wrraper{
   display: flex;
-  flex-direction: row;
-  gap: 1000px;
+  justify-content: center;
+  width: 100%;
 }
 
-.cart{
-  font-size: 30px;
-  margin-left: 180px;
-  margin-top: 20px;
-  transition: transform 0.3s ease;
+.title{
+  font-size: 20px;
+  text-align: center;
 }
+
+.wrraper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.things-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
 .mainwrraper{
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 150px;
-  height: 100px;
+  height: 150px;
+  border: 1px solid #333;
+  padding: 10px;
+  border-radius: 8px;
+}
+button{
+  background-color: #333;
   color: white;
+  border: 1px solid white;
+  border-radius: 15px;
 }
 .image{
   width: 100px;
+  height: 100px;
+  object-fit: cover;
 }
