@@ -1,0 +1,36 @@
+body{
+  background-color: black;
+  color: white;
+}
+
+.main{
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+}
+.title{
+  font-size: 20px;
+}
+.wrraper{
+  display: flex;
+  flex-direction: row;
+  gap: 1000px;
+}
+
+.cart{
+  font-size: 30px;
+  margin-left: 180px;
+  margin-top: 20px;
+  transition: transform 0.3s ease;
+}
+.mainwrraper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+  height: 100px;
+  color: white;
+}
+.image{
+  width: 100px;
+}

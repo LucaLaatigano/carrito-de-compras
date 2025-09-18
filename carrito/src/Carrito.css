@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 300px;
+}
+
+.cart{
+    color: white;
+    font-size: 30px;
+}
+button{
+    border: none;
+    background-color: black;
+    color: white;
+}
