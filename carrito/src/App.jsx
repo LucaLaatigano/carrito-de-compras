@@ -17,6 +17,7 @@ function App(){
   const handleClick = (element)=>{
     setArrayThing([...arrayThing, element])
   }
+  
 
 
 
@@ -24,7 +25,7 @@ function App(){
     <div className="main">
       <div className="wrraper">
         <h2 className="title">Carrito de compras</h2>
-          <ThingsContext.Provider value={arrayThing}>
+          <ThingsContext.Provider value={{arrayThing, setArrayThing}}>
             <Carrito />
           </ThingsContext.Provider>
         
@@ -36,7 +37,7 @@ function App(){
                 <h3 className="thing-name">
                   {thing.name}
                 </h3>
-                <button onClick={()=> handleClick(thing)}>Add to cart</button>
+                <button className="add-cart" onClick={()=> handleClick(thing)}>Add to cart</button>
               </div>
             </div>
           ))}
